@@ -1,3 +1,8 @@
 import setupEnv from "@ladjs/env";
 
-export default setupEnv();
+const env = setupEnv();
+
+export default {
+  ...env,
+  isProduction: env.NODE_ENV === "production"
+}
