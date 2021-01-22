@@ -5,5 +5,5 @@ export function createUser(user) {
 }
 
 export function getUsers() {
-  return User.find();
+  return User.find().limit(1500);
 }

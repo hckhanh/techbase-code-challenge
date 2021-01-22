@@ -50,11 +50,12 @@ Then you will receive an output:
 
 After cloning the project, run this command to start the server:
 
+```shell
+yarn start
+```
+
+
 ## Deployment
 
 You can directly deploy from this codebase or use my Docker image:
 https://hub.docker.com/r/hckhanh/techbase-code-challenge
-
-```shell
-yarn start
-```
