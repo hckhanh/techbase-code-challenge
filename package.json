@@ -13,9 +13,9 @@
     "test": "npm run build && mocha --require @babel/register",
     "serve": "node dist/index.js",
     "format": "prettier --write .",
-    "checks": "yarn check:prettier",
+    "checks": "yarn check:prettier && yarn check:eslint",
     "check:prettier": "prettier --check .",
-    "check:eslint": ""
+    "check:eslint": "eslint ."
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

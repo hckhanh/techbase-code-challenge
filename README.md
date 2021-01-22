@@ -54,7 +54,6 @@ After cloning the project, run this command to start the server:
 yarn start
 ```
 
-
 ## Deployment
 
 You can directly deploy from this codebase or use my Docker image:
