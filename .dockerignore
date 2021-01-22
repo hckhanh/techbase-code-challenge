@@ -1,0 +1,11 @@
+node_modules
+
+# Configurations
+babel.config.js
+Dockerfile
+
+# Sources
+src
+
+# logs
+*.log
