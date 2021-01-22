@@ -13,6 +13,7 @@
     "test": "npm run build && mocha --require @babel/register",
     "serve": "node dist/index.js",
     "format": "prettier --write .",
+    "checks": "yarn check:prettier",
     "check:prettier": "prettier --check .",
     "check:eslint": ""
   },

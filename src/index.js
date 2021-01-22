@@ -7,7 +7,7 @@ connectMongo().catch((error) => {
   console.error(error);
 
   // Terminate the app when first connection cannot be established
-  process.exit(1)
+  process.exit(1);
 });
 
 const server = new ApolloServer(apolloConfigs);

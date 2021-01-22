@@ -1,4 +1,4 @@
-import env from "../utils/env"
+import env from "../utils/env";
 
 export const uri = env.MONGO_URI;
 

@@ -4,5 +4,5 @@ const env = setupEnv();
 
 export default {
   ...env,
-  isProduction: env.NODE_ENV === "production"
-}
+  isProduction: env.NODE_ENV === "production",
+};
