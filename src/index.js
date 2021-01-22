@@ -1,12 +1,13 @@
-import http from "http";
+import { ApolloServer } from "apollo-server";
+import apolloConfigs from "./configs/apollo";
+import { connectMongo } from "./utils/mongo";
 
-const server = http
-  .createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Hello World");
-  })
-  .listen(3000, "127.0.0.1");
+connectMongo().catch((error) => {
+  console.error(error);
+});
 
-console.log("Server running at http://127.0.0.1:3000/");
+const server = new ApolloServer(apolloConfigs);
 
-export default server;
+server.listen({ port: 3000 }).then(({ url }) => {
+  console.log(`🚀 Server is ready at ${url}`);
+});
