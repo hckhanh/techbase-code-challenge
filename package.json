@@ -31,7 +31,7 @@
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@ladjs/env": "^2.0.2",
-    "apollo-server": "^2.19.2",
+    "apollo-server": "^2.25.4",
     "argon2": "^0.27.1",
     "graphql": "^15.4.0",
     "lodash.merge": "^4.6.2",
